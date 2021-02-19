@@ -1,2 +1,2 @@
-# Dashboard-Software-FE8
+# Dashboard-Firmware-FE8
 Dashboard code
