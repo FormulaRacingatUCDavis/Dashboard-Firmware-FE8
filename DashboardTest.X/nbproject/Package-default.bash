@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Dashboard-Firmware-FE8.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=Dashboard-Firmware-FE8.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=dashboard-firmware-fe8/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/DashboardTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=DashboardTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=dashboardtest.x/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/dashboard-firmware-fe8/bin
+makeDirectory ${TMPDIR}/dashboardtest.x/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/dashboard-firmware-fe8.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/dashboardtest.x.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/dashboard-firmware-fe8.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/dashboardtest.x.tar *
 checkReturnCode
 
 # Cleanup
