@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=FE8_Dashboard.X
+PROJECTNAME=Dashboard-Firmware-FE8
 
 # Active Configuration
 DEFAULTCONF=default
