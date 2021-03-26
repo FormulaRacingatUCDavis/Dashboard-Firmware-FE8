@@ -200,6 +200,19 @@ void TMR2_Counter16BitSet ( uint16_t value );
 
 uint16_t TMR2_Counter16BitGet( void );
 
+/** 
+ @Summary
+    turns off DE pin upon entering horizontal blanking interval
+
+  @Param
+    None.
+
+  @Returns
+    None
+ */
+
+void TMR2_EndLine(void);
+
 /**
   @Summary
     Assigns a function pointer with a callback address.

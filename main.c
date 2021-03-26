@@ -49,6 +49,7 @@
 #include "mcc_generated_files/mcc.h"
 #define FCY _XTAL_FREQ
 #include <libpic30.h>
+#include "mcc_generated_files/tmr2.h"
 
 /*
  * @Summary - writes a string to UART1
@@ -228,15 +229,3 @@ int main(void) {
 /**
  End of File
 */
-
-
-// gang gang
-
-//here's my gang gang; gang?
-
-// gangity gang gang
-
-
-// Here comes another one
-
-// oh no, not again
