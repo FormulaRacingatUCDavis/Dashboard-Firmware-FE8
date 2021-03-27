@@ -170,7 +170,7 @@ void __attribute__ ((weak)) TMR2_CallBack(void)
     // Add your custom callback code here
     // turns on DE pin upon entering horizontal display interval
     // if in vertical display interval
-    if (TMR3 < 20148) { // 590 * 272 / 8
+    if (TMR3 < 2507) { // 590 * 272 * 4 / 256
         IO_RC9_SetHigh();
     }
 }
