@@ -48,6 +48,8 @@
 */
 
 #include <stdio.h>
+#include "tmr1.h"
+#include "tmr2.h"
 #include "tmr3.h"
 
 /**
@@ -159,7 +161,9 @@ uint16_t TMR3_Counter16BitGet( void )
 
 void __attribute__ ((weak)) TMR3_CallBack(void)
 {
-    // Add your custom callback code here
+    // restart horizontal timers
+    TMR1_Start();
+    TMR2_Start();
 }
 
 void  TMR3_SetInterruptHandler(void (* InterruptHandler)(void))

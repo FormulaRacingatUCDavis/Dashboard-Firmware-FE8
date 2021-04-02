@@ -157,7 +157,6 @@ int main(void) {
 
     while(1) {
         // turns off DE pin upon entering horizontal blanking interval
-        TMR2_EndLine();
 
         /*
         color_to_GPIO(0xFF); //white
